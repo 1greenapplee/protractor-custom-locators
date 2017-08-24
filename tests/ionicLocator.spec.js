@@ -1,7 +1,7 @@
 'use strict';
-var expressjs = require('./server.js')
+var expressjs = require('./server.js');
 
-describe('protractor-ionic-locator', function () {
+describe('protractor-goodies', function () {
     var _beforeAll = false;
     beforeEach(function () {
         if (_beforeAll) return;

@@ -1,6 +1,6 @@
 {
-  "name": "protractor-locator-custom-modules",
-  "version": "0.0.3",
+  "name": "protractor-goodies",
+  "version": "0.1",
   "description": "Adds a locators to a protractor instance that find specific elements.",
   "scripts": {
     "update-webdriver": "webdriver-manager update",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/1greenapplee/protractor-custom-locators"
+    "url": "https://github.com/1greenapplee/protractor-goodies"
   },
   "keywords": [
     "protractor",
@@ -21,9 +21,9 @@
   "author": "Fabian Clain <fabian.clain@gmail.com> (http://thisqa.com)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/1greenapplee/protractor-custom-locators/issues"
+    "url": "https://github.com/1greenapplee/protractor-goodies/issues"
   },
-  "homepage": "https://github.com/1greenapplee/protractor-custom-locators",
+  "homepage": "https://github.com/1greenapplee/protractor-goodies",
   "devDependencies": {
     "express": "*",
     "protractor": "*"
