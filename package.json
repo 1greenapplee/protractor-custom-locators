@@ -5,7 +5,7 @@
   "scripts": {
     "update-webdriver": "webdriver-manager update",
     "postinstall": "webdriver-manager update",
-    "instGlobal": "npm install -g protractor grunt",
+    "instGlobal": "npm install -g protractor",
     "pretest": "npm install"
   },
   "repository": {
@@ -14,9 +14,10 @@
   },
   "keywords": [
     "protractor",
-    "ionic",
+    "custom-locators",
     "locator",
-    "collection-repeat"
+    "ui-href",
+    "repeats"
   ],
   "author": "Fabian Clain <fabian.clain@gmail.com> (http://thisqa.com)",
   "license": "MIT",
@@ -25,8 +26,8 @@
   },
   "homepage": "https://github.com/1greenapplee/protractor-goodies",
   "devDependencies": {
-    "express": "*",
-    "protractor": "*"
+    "express": "^4.15.4",
+    "protractor": "^5.1.12"
   },
   "engines": {
     "node": ">= 0.10.33"
