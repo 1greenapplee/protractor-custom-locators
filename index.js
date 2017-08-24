@@ -4,7 +4,7 @@
 
 'use strict';
 module.exports = function (ptor) {
-    ptor.By.addLocator('itemBeta', function (spanText, selector, opt_parentElement) {
+    ptor.By.addLocator('itemTeta', function (spanText, selector, opt_parentElement) {
         var using = opt_parentElement || document;
         var els = using.querySelectorAll(selector);
         return Array.prototype.filter.call(els, function (el) {
