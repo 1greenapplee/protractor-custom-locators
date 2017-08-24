@@ -1,20 +1,20 @@
-protractor-ionic-locator
+protractor-goodies
 ===
 
-Adds a locators to a protractor instance that find Ionic specific elements, such as collection-repeat.
+Adds a locators to a protractor instance that find specific elements.
 
 [![Build Status](https://travis-ci.org/MobileCaddy/protractor-ionic-locator.svg)](https://travis-ci.org/MobileCaddy/protractor-ionic-locator)
 
 ## Installation
 
-`$ npm install protractor-extra-locators`
+`$ npm install protractor-goodies`
 
 ## Usage
 
 ```javascript
 onPrepare: function () {
   // Your other stuff.
-  require('protractor-extra-locators')(protractor);
+  require('protractor-goodies')(protractor);
 }
 ```
 
