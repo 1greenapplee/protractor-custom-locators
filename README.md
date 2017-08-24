@@ -7,14 +7,14 @@ Adds a locators to a protractor instance that find Ionic specific elements, such
 
 ## Installation
 
-`$ npm install protractor-ionic-locator`
+`$ npm install protractor-extra-locators`
 
 ## Usage
 
 ```javascript
 onPrepare: function () {
   // Your other stuff.
-  require('protractor-ionic-locator')(protractor);
+  require('protractor-extra-locators')(protractor);
 }
 ```
 
@@ -60,4 +60,26 @@ $ npm run test
 
 ## Credit
 
+
+
 Base code for adding locators to Protractor was taken from [Fernando Martinez's](https://github.com/crzrcn) great [protractor-uisref-locator package](https://github.com/crzrcn/protractor-uisref-locator)... thanks man!
+
+
+
+Added:
+example:
+
+element(by.uiSref('users.show({id: 42})'));
+
+element.all(by.uiSref('users.index')).then(function (elems) {
+  // elems contains all the elements found that match the given ui-sref.
+});
+
+// Get elements that match the given ui-sref and that are within the element with id='users'.
+element(by.css('#users')).element(by.uiSref('users.index'))
+
+
+Example Calls
+
+by.linkUiSref('users.show({id: 42})', element(by.css('.users')));
+by.linkUiSref('users.index.page({page: 2})');

@@ -1,8 +1,6 @@
-# 0.0.2
+# 0.1
 
-* Added Travis/SauceLabs CI support
-* Removed need to manually start express server for testing
+* Added linkUiSref locator
+* Added uiSref locator
 
-# 0.0.1
 
-Here be dragons!

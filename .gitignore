@@ -1,2 +1,12 @@
 *.log
 node_modules/
+npm-debug.log
+result.json
+npm-debug.log
+phantomjsdriver.log
+jasmine-test-results.json
+.DS_Store
+.idea
+typescript/test-dist/
+bitbucket-pipelines.yml
+
