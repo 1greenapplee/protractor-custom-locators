@@ -20,7 +20,10 @@ onPrepare: function () {
 
 The following locators will be availble in your specs;
 
+### by.uiSref
+### by.linkUiSref
 ### by.collRepeater
+
 
 Find elements inside an ng-repeat.
 
@@ -48,9 +51,9 @@ Param            | Type
 ---------------- | -------------
 repeatDescriptor | string
 
-## Testing
+## Contributing
 
-If you want to contribute to the package please write tests... these commands run the tests.
+If you want to contribute to the package please suggest locators and use cases.
 
 ```
 $ npm run webdriver
