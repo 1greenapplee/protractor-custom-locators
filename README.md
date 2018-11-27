@@ -14,51 +14,8 @@ Adds a locators to a protractor instance that find specific elements.
 ```javascript
 onPrepare: function () {
   // Your other stuff.
-  require('protractor-goodies')(protractor);
+  global.goodies =  require('protractor-goodies');
 }
-```
-
-The following locators will be availble in your specs;
-
-### by.uiSref
-### by.linkUiSref
-### by.collRepeater
-
-
-Find elements inside an ng-repeat.
-
-#### Example
-
-*View*
-```xhtml
-<div collection-repeat="cat in pets">
-  <span>{{cat.name}}</span>
-  <span>{{cat.age}}</span>
-</div>
-```
-
-*Code*
-```javascript
-// Returns a promise that resolves to an array of WebElements containing
-// all top level elements repeated by the Ionic collection-repeat repeater. 
-// For 2 pets rows resolves to an array of 2 elements.
-var rows = element.all(by.collRepeater('cat in pets'));
-```
-
-#### Params
-
-Param            | Type
----------------- | -------------
-repeatDescriptor | string
-
-## Contributing
-
-If you want to contribute to the package please suggest locators and use cases.
-
-```
-$ npm run webdriver
-
-$ npm run test
 ```
 
 ## Credit
@@ -84,5 +41,4 @@ element(by.css('#users')).element(by.uiSref('users.index'))
 
 Example Calls
 
-by.linkUiSref('users.show({id: 42})', element(by.css('.users')));
-by.linkUiSref('users.index.page({page: 2})');
+goodies.log('this is a console.log example')
