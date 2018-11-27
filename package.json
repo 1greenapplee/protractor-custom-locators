@@ -1,6 +1,6 @@
 {
   "name": "protractor-goodies",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Adds a locators to a protractor instance that find specific elements.",
   "scripts": {
     "update-webdriver": "webdriver-manager update",
@@ -27,7 +27,7 @@
   "homepage": "https://github.com/1greenapplee/protractor-goodies",
   "devDependencies": {
     "express": "^4.15.4",
-    "protractor": "^5.1.12"
+    "protractor": "^5.4.1"
   },
   "engines": {
     "node": ">= 0.10.33"

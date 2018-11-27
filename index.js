@@ -1,7 +1,6 @@
 /**
  * This Source Code Form is subject to the terms of the MIT License
  */
-
 'use strict';
 module.exports = function (ptor) {
     ptor.By.addLocator('itemTeta', function (spanText, selector, opt_parentElement) {
