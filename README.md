@@ -17,11 +17,17 @@ onPrepare: function () {
   global.goodies =  require('protractor-goodies');
 }
 ```
-
-
-
 Example Calls
-goodies.log('this is a console.log example')
-goodies.ByRepeater() -- this one accepts two parameters as well. A combined parameter and the actual locator.
+```
+goodies.elByName();
+goodies.allByTag
+goodies.allByTxt
+goodies.allByRepeat
+goodies.byTxt
+goodies.byModel
+```
+
+
+
 
 A deeper example on how protractor locators are working, here: https://sdet.ro/blog/protractor-selectors-how-to-explanation-protractor-locators/
