@@ -1,6 +1,6 @@
 {
   "name": "protractor-goodies",
-  "version": "0.0.50",
+  "version": "0.0.52",
   "description": "Adds a locators to a protractor instance that find specific elements.",
   "scripts": {
     "update-webdriver": "webdriver-manager update",

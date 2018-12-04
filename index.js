@@ -13,11 +13,11 @@ let allByTag= (param, combined) => {
     }
 };
 
-let allByTxt= (paramClass, paramText, combined) => {
+let byTxt= (paramClass, paramText, combined) => {
     if(combined){
         return combined.all(by.cssContainingText(paramClass, paramText));
     }else{
-        return element.all(by.cssContainingText(paramClass, paramText));
+        return element(by.cssContainingText(paramClass, paramText));
     }
 };
 let allByRepeat= (paramClass, combined) => {
@@ -28,9 +28,9 @@ let allByRepeat= (paramClass, combined) => {
     }
 };
 
-let byTxt= (paramClass, paramText) => {
-    return element(by.cssContainingText(paramClass, paramText));
-};
+// let byTxt= (paramClass, paramText) => {
+//     return element(by.cssContainingText(paramClass, paramText));
+// };
 let byModel= (paramClass) => {
     return element(by.model(paramClass));
 };
@@ -145,7 +145,6 @@ module.exports = {
     networkThrottle,
     byModel,
     allByRepeat,
-    allByTxt,
     allByTag,
     elByName,
     byTxt,
