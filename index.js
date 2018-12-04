@@ -64,7 +64,7 @@ function smartWaitURL(item2){
 function ch(elementToPass){
     let fpass = false;
     function returnPresence(elm) {
-        elm.isPresent().then(function (p) {
+        elm.isDisplayed().then(function (p) {
             if (p) {
                 fpass = true;
             }else{
