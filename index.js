@@ -1,6 +1,6 @@
 'use strict';
 const EC = protractor.ExpectedConditions;
-
+const defaultWaitTime = 30000;
 let elByName = (param) => {
     return element(by.name(param));
 };
