@@ -67,13 +67,15 @@ function ch(elementToPass){
         elm.isPresent().then(function (p) {
             if (p) {
                 fpass = true;
+            }else{
+        	browser.driver.sleep(400);
+
             }
         });
     }
     browser.driver.wait(function () {
         returnPresence(elementToPass);
         console.log('in wait');
-        browser.driver.sleep(300);
         if (fpass) {
             //setting to false, for waiting on the next loop.
             fpass = false;
