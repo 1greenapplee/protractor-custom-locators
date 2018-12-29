@@ -68,8 +68,7 @@ function ch(elementToPass){
             if (p) {
                 fpass = true;
             }else{
-        	browser.driver.sleep(400);
-
+        		browser.driver.sleep(1000);
             }
         });
     }
